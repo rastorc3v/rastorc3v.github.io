@@ -138,7 +138,15 @@ council = new Council();
 async function login() {
     let data = await fetch('127.0.0.1:3000/login', {
         method: "POST",
-        credentials: "include"
+        credentials: "include",
+        headers: {
+            //'Content-Type': 'application/json'
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: {
+            username: 'polesmith',
+            password: '101'
+        }
     });
     console.log(data);
 }
