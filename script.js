@@ -135,3 +135,9 @@ class Format {
 
 council = new Council();
 
+async function login() {
+    let data = await fetch('127.0.0.1:3000/login', {
+        method: "POST",
+        credentials: "include"
+    });
+}
