@@ -2,7 +2,9 @@ let app = document.getElementById('container');
 
 async function getData(url) {
     try {
-        let data = await fetch('http://127.0.0.1:3000/' + url);
+        let data = await fetch('http://127.0.0.1:3000/' + url, {
+            credentials: "include"
+        });
         return await data.json();
     } catch (e) {
         console.log(e)
