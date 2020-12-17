@@ -25,7 +25,7 @@ class Requests {
             let data = await fetch('http://127.0.0.1:3000/' + url, {
                 credentials: 'include',
                 headers: {
-                    Cookie: 'token=kek'
+                    cookie: 'token=kek'
                 }
             });
             return await data.json();
