@@ -136,14 +136,15 @@ class Format {
 council = new Council();
 
 async function login() {
+    let username = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
     let data = await fetch('http://127.0.0.1:3000/login', {
         method: "POST",
         credentials: "include",
         headers: {
-            //'Content-Type': 'application/json'
             'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: 'username=' + encodeURIComponent('pollesmith') + '&password=101'
+        body: 'username=' + encodeURIComponent(username) + '&password=' + encodeURIComponent(password)
     });
     console.log(await data.json());
 }
