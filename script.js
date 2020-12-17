@@ -23,7 +23,7 @@ class Requests {
     static async send (url) {
         try {
             let data = await fetch('http://127.0.0.1:3000/' + url, {
-                credentials: 'same-origin',
+                credentials: 'include',
                 headers: {
                     cookies: 'token=kek'
                 }
@@ -151,5 +151,9 @@ async function login() {
         },
         body: 'username=' + encodeURIComponent(username) + '&password=' + encodeURIComponent(password)
     });
-    document.cookie = 'token=' + await data.json();
+    //document.cookie = 'token=' + await data.json();
+    let expiredays = 7;
+    let exdate=new Date();
+    exdate.setDate(exdate.getDate()+expiredays);
+    document.cookie = "token=" +escape(await data.json())+((expiredays==null) ? "" : "; expires="+exdate.toGMTString()+" ;path=http://127.0.0.1:3000/");
 }
