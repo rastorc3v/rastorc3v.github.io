@@ -23,7 +23,10 @@ class Requests {
     static async send (url) {
         try {
             let data = await fetch('http://127.0.0.1:3000/' + url, {
-                credentials: 'include'
+                credentials: 'include',
+                headers: {
+                    Cookie: 'token=kek'
+                }
             });
             return await data.json();
         } catch (e) {
