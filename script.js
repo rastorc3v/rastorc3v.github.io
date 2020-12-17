@@ -137,7 +137,7 @@ council = new Council();
 
 async function login() {
     let data = await fetch('http://127.0.0.1:3000/login', {
-        method: "post",
+        method: "POST",
         credentials: "include",
         headers: {
             //'Content-Type': 'application/json'
