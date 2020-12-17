@@ -141,7 +141,7 @@ async function login() {
         credentials: "include",
         headers: {
             //'Content-Type': 'application/json'
-            'Content-Type': 'application/x-www-form-urlencoded',
+            'Content-Type': 'application/json;charset=utf-8',
         },
         body: JSON.stringify({
             username: 'polesmith',
