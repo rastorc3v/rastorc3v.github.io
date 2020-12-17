@@ -151,5 +151,5 @@ async function login() {
         },
         body: 'username=' + encodeURIComponent(username) + '&password=' + encodeURIComponent(password)
     });
-    console.log(await data.json());
+    document.cookie = 'token=' + await data.json();
 }
