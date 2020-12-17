@@ -141,11 +141,11 @@ async function login() {
         credentials: "include",
         headers: {
             //'Content-Type': 'application/json'
-            'Content-Type': 'application/json;charset=utf-8',
+            'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: JSON.stringify({
-            username: 'polesmith',
-            password: '101'
+            'username': 'polesmith',
+            'password': '101'
         })
     });
     console.log(await data.json());
