@@ -1,0 +1,19 @@
+{
+  "name": "council-front",
+  "version": "1.0.0",
+  "description": "API of Academic Councils",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rastorc3v/academic-councils-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rastorc3v/academic-councils-api/issues"
+  },
+  "homepage": "https://github.com/rastorc3v/academic-councils-api#readme"
+}

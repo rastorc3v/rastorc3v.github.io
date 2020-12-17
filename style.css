@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+}
+
+main {
+  margin-top: 4vh;
+}
+
+.__focus-row:hover {
+  transform: scale(1.04);
+}
+
+.__focus-row {
+  transition-duration: 0.5s;
+}
+
+.cell {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin: auto;
+  padding: 0 5vw;
+}
+
+header {
+  display: block;
+  background-color: green;
+  height: 45px;
+}
+header nav {
+  height: 100%;
+}
+
+.divide {
+  border-right: 2px solid white;
+}
+
+table {
+  width: 100%;
+}
+
+#menu {
+  display: flex;
+  align-content: center;
+  margin: 0 auto;
+  padding-inline-start: 0;
+}
+
+.menu-item {
+  display: inline-block;
+  padding: 10px;
+  min-width: 100px;
+  text-align: center;
+  color: white;
+  font: 20px "Microsoft Sans Serif";
+}
+.menu-item:hover {
+  background-color: darkgreen;
+}
+
+#loading {
+  width: 150px;
+  height: 150px;
+  margin: 100px auto;
+}
+
+/*# sourceMappingURL=style.css.map */

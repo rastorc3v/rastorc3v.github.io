@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Council</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul id="menu" role="menubar">
+            <li class="menu-item divide" role="menuitem" onclick="council.getAll()">
+                Советы
+            </li>
+            <li class="menu-item divide" role="menuitem" onclick="council.getOne('')">
+                Специальности
+            </li>
+            <li class="menu-item divide" role="menuitem">
+                Члены советов
+            </li>
+            <li class="menu-item" role="menuitem" onclick="auth.login()">
+                Вход
+            </li>
+        </ul>
+        <form action="http://127.0.0.1:3000/login" class="login-form" method="post">
+            <label>
+                login
+                <input name="username" type="text">
+            </label>
+            <label>
+                Password
+                <input name="password" type="password">
+            </label>
+            <button type="submit">Войти</button>
+        </form>
+    </nav>
+</header>
+<main>
+    <section id="container">
+    </section>
+</main>
+<footer>
+
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
