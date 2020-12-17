@@ -143,7 +143,7 @@ async function login() {
             //'Content-Type': 'application/json'
             'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: JSON.stringify('username=polesmith&password=101')
+        body: 'username=polesmith&password=101'
     });
     console.log(await data.json());
 }
