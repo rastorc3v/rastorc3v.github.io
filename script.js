@@ -140,4 +140,5 @@ async function login() {
         method: "POST",
         credentials: "include"
     });
+    console.log(data);
 }
